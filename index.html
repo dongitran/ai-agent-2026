@@ -61,8 +61,7 @@
         .hero-scroll{position:absolute;bottom:var(--space-xl);left:50%;transform:translateX(-50%)}
         .scroll-indicator{display:flex;flex-direction:column;align-items:center;gap:var(--space-xs);color:var(--text-muted);font-size:.875rem}
         section{padding:var(--space-3xl) 0}
-        .lazy-section{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
-        .lazy-section.visible{opacity:1;transform:translateY(0)}
+        /* Content visible immediately - no lazy loading */
         @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
         @media(max-width:768px){.nav-menu{position:fixed;top:70px;left:0;right:0;background:var(--surface);flex-direction:column;padding:var(--space-lg);gap:var(--space-md);border-bottom:1px solid var(--surface-light);transform:translateY(-100%);opacity:0;visibility:hidden;transition:all var(--transition-normal)}.nav-menu.active{transform:translateY(0);opacity:1;visibility:visible}.nav-toggle{display:block}}
     </style>
@@ -148,8 +147,8 @@
         </div>
     </section>
 
-    <!-- Trends Section - Lazy Loaded -->
-    <section id="trends" class="trends lazy-section">
+    <!-- Trends Section -->
+    <section id="trends" class="trends">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Trends</span>
@@ -197,8 +196,8 @@
         </div>
     </section>
 
-    <!-- Predictions Section - Lazy Loaded -->
-    <section id="predictions" class="predictions lazy-section">
+    <!-- Predictions Section -->
+    <section id="predictions" class="predictions">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Predictions</span>
@@ -251,8 +250,8 @@
         </div>
     </section>
 
-    <!-- Use Cases Section - Lazy Loaded -->
-    <section id="usecases" class="usecases lazy-section">
+    <!-- Use Cases Section -->
+    <section id="usecases" class="usecases">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Use Cases</span>
@@ -406,8 +405,8 @@
         </div>
     </section>
 
-    <!-- Key Players Section - Lazy Loaded -->
-    <section id="players" class="players lazy-section">
+    <!-- Key Players Section -->
+    <section id="players" class="players">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Key Players</span>
@@ -485,8 +484,8 @@
         </div>
     </section>
 
-    <!-- CTA Section - Lazy Loaded -->
-    <section class="cta lazy-section">
+    <!-- CTA Section -->
+    <section class="cta">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for the AI Agent Revolution?</h2>
@@ -499,8 +498,8 @@
         </div>
     </section>
 
-    <!-- Footer - Lazy Loaded -->
-    <footer class="footer lazy-section">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
