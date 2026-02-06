@@ -3,12 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Agent 2026 - Discover how AI agents are transforming industries, redefining productivity, and shaping the future of human-machine collaboration.">
+    <meta name="theme-color" content="#6366f1">
     <title>AI Agent 2026 - The Future of Intelligent Automation</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Preload critical font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+    
+    <!-- Inline Critical CSS -->
+    <style>
+        :root{--primary:#6366f1;--primary-light:#818cf8;--secondary:#06b6d4;--accent:#f472b6;--background:#0f0f1a;--surface:#1a1a2e;--surface-light:#252542;--text-primary:#fff;--text-secondary:#a1a1aa;--text-muted:#71717a;--success:#22c55e;--gradient-primary:linear-gradient(135deg,#6366f1 0%,#8b5cf6 50%,#d946ef 100%);--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2rem;--space-xl:3rem;--space-2xl:4rem;--space-3xl:6rem;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--shadow-glow:0 0 40px rgba(99,102,241,.3);--radius-sm:.375rem;--radius-md:.5rem;--radius-lg:.75rem;--radius-xl:1rem;--radius-full:9999px;--transition-fast:.15s ease;--transition-normal:.3s ease}
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        body{font-family:var(--font-sans);background:var(--background);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
+        a{text-decoration:none;color:inherit}
+        ul{list-style:none}
+        img{max-width:100%;display:block}
+        .container{max-width:1200px;margin:0 auto;padding:0 var(--space-lg)}
+        .gradient-text{background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .btn{display:inline-flex;align-items:center;gap:var(--space-xs);padding:.75rem 1.5rem;font-size:.95rem;font-weight:500;border-radius:var(--radius-lg);transition:all var(--transition-normal);cursor:pointer;border:none}
+        .btn-primary{background:var(--gradient-primary);color:#fff;box-shadow:0 4px 14px rgba(99,102,241,.4);will-change:transform}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(99,102,241,.5)}
+        .btn-secondary{background:var(--surface);color:var(--text-primary);border:1px solid var(--surface-light)}
+        .btn-secondary:hover{background:var(--surface-light)}
+        .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(15,15,26,.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.05);will-change:background}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 var(--space-lg);display:flex;align-items:center;justify-content:space-between;height:70px}
+        .nav-logo{display:flex;align-items:center;gap:var(--space-xs);font-size:1.25rem;font-weight:700}
+        .nav-logo i{font-size:1.5rem;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .nav-menu{display:flex;gap:var(--space-lg)}
+        .nav-link{font-size:.95rem;font-weight:500;color:var(--text-secondary);position:relative;transition:color var(--transition-fast)}
+        .nav-link:hover{color:var(--text-primary)}
+        .nav-toggle{display:none;background:none;border:none;color:var(--text-primary);font-size:1.5rem;cursor:pointer}
+        .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;padding:calc(70px + var(--space-3xl)) var(--space-lg) var(--space-3xl);overflow:hidden}
+        .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(99,102,241,.15) 0%,transparent 50%),radial-gradient(ellipse at 80% 50%,rgba(217,70,239,.1) 0%,transparent 50%),radial-gradient(ellipse at 50% 100%,rgba(6,182,212,.1) 0%,transparent 50%);will-change:transform}
+        .hero-particles{position:absolute;inset:0;overflow:hidden;will-change:transform;content:''}
+        .hero-particles::before,.hero-particles::after{content:'';position:absolute;width:300px;height:300px;border-radius:50%;filter:blur(80px);opacity:.3;animation:float 20s ease-in-out infinite}
+        .hero-particles::before{background:var(--primary);top:10%;left:10%}
+        .hero-particles::after{background:var(--accent);bottom:10%;right:10%;animation-delay:-10s}
+        @keyframes float{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(50px,-30px) scale(1.1)}50%{transform:translate(0,50px) scale(.9)}75%{transform:translate(-50px,-20px) scale(1.05)}}
+        .hero-content{position:relative;z-index:1;text-align:center;max-width:800px}
+        .hero-badge{display:inline-flex;align-items:center;gap:var(--space-xs);padding:.5rem 1rem;background:var(--surface);border:1px solid var(--surface-light);border-radius:var(--radius-full);font-size:.875rem;font-weight:500;color:var(--primary-light);margin-bottom:var(--space-lg)}
+        .hero-badge i{color:var(--accent)}
+        .hero-title{font-size:clamp(2.5rem,6vw,4rem);font-weight:800;line-height:1.1;margin-bottom:var(--space-md)}
+        .hero-title span{display:block}
+        .hero-subtitle{font-size:clamp(1rem,2vw,1.25rem);color:var(--text-secondary);max-width:600px;margin:0 auto var(--space-xl)}
+        .hero-cta{display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap;margin-bottom:var(--space-3xl)}
+        .hero-stats{display:flex;justify-content:center;gap:var(--space-2xl);flex-wrap:wrap}
+        .stat-item{text-align:center}
+        .stat-number{display:block;font-size:2rem;font-weight:800;background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .stat-label{font-size:.875rem;color:var(--text-muted)}
+        .hero-scroll{position:absolute;bottom:var(--space-xl);left:50%;transform:translateX(-50%)}
+        .scroll-indicator{display:flex;flex-direction:column;align-items:center;gap:var(--space-xs);color:var(--text-muted);font-size:.875rem}
+        section{padding:var(--space-3xl) 0}
+        .lazy-section{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+        .lazy-section.visible{opacity:1;transform:translateY(0)}
+        @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+        @media(max-width:768px){.nav-menu{position:fixed;top:70px;left:0;right:0;background:var(--surface);flex-direction:column;padding:var(--space-lg);gap:var(--space-md);border-bottom:1px solid var(--surface-light);transform:translateY(-100%);opacity:0;visibility:hidden;transition:all var(--transition-normal)}.nav-menu.active{transform:translateY(0);opacity:1;visibility:visible}.nav-toggle{display:block}}
+    </style>
+    
+    <!-- Async load Font Awesome -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="preload" href="styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.min.css"></noscript>
 </head>
 <body>
     <!-- Navigation -->
@@ -18,7 +83,7 @@
                 <i class="fas fa-robot"></i>
                 <span>AI Agent 2026</span>
             </a>
-            <button class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu" id="navMenu">
@@ -31,7 +96,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section - Eagerly Loaded -->
     <section id="hero" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-particles" id="particles"></div>
@@ -83,8 +148,8 @@
         </div>
     </section>
 
-    <!-- Trends Section -->
-    <section id="trends" class="trends">
+    <!-- Trends Section - Lazy Loaded -->
+    <section id="trends" class="trends lazy-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Trends</span>
@@ -92,78 +157,48 @@
                 <p class="section-desc">The most significant trends driving the AI agent revolution this year</p>
             </div>
             <div class="trends-grid">
-                <div class="trend-card" data-aos="fade-up">
-                    <div class="trend-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
+                <div class="trend-card">
+                    <div class="trend-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Multi-Agent Orchestration</h3>
                     <p>AI agents now work in coordinated swarms, collaborating to solve complex problems that require multiple specialized capabilities.</p>
-                    <div class="trend-meta">
-                        <span class="trend-growth">+340%</span>
-                        <span class="trend-label">Growth</span>
-                    </div>
+                    <div class="trend-meta"><span class="trend-growth">+340%</span><span class="trend-label">Growth</span></div>
                 </div>
-                <div class="trend-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="trend-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
+                <div class="trend-card">
+                    <div class="trend-icon"><i class="fas fa-brain"></i></div>
                     <h3>Autonomous Reasoning</h3>
                     <p>Advanced reasoning capabilities enable agents to break down complex tasks, plan multi-step solutions, and adapt in real-time.</p>
-                    <div class="trend-meta">
-                        <span class="trend-growth">+280%</span>
-                        <span class="trend-label">Adoption</span>
-                    </div>
+                    <div class="trend-meta"><span class="trend-growth">+280%</span><span class="trend-label">Adoption</span></div>
                 </div>
-                <div class="trend-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="trend-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                <div class="trend-card">
+                    <div class="trend-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Agent Safety & Alignment</h3>
                     <p>Robust safety frameworks ensure AI agents act within defined boundaries while maintaining helpfulness and capability.</p>
-                    <div class="trend-meta">
-                        <span class="trend-growth">+190%</span>
-                        <span class="trend-label">Investment</span>
-                    </div>
+                    <div class="trend-meta"><span class="trend-growth">+190%</span><span class="trend-label">Investment</span></div>
                 </div>
-                <div class="trend-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="trend-icon">
-                        <i class="fas fa-plug"></i>
-                    </div>
+                <div class="trend-card">
+                    <div class="trend-icon"><i class="fas fa-plug"></i></div>
                     <h3>Universal Tool Integration</h3>
                     <p>Seamless integration with APIs, databases, and enterprise systems allows agents to interact with any digital environment.</p>
-                    <div class="trend-meta">
-                        <span class="trend-growth">+420%</span>
-                        <span class="trend-label">Integrations</span>
-                    </div>
+                    <div class="trend-meta"><span class="trend-growth">+420%</span><span class="trend-label">Integrations</span></div>
                 </div>
-                <div class="trend-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="trend-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
+                <div class="trend-card">
+                    <div class="trend-icon"><i class="fas fa-comments"></i></div>
                     <h3>Natural Agent Communication</h3>
                     <p>Human-like conversational abilities with emotional intelligence and context awareness for natural interactions.</p>
-                    <div class="trend-meta">
-                        <span class="trend-growth">+250%</span>
-                        <span class="trend-label">Usage</span>
-                    </div>
+                    <div class="trend-meta"><span class="trend-growth">+250%</span><span class="trend-label">Usage</span></div>
                 </div>
-                <div class="trend-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="trend-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
+                <div class="trend-card">
+                    <div class="trend-icon"><i class="fas fa-cogs"></i></div>
                     <h3>No-Code Agent Building</h3>
                     <p>Visual interfaces and templates empower non-technical users to create sophisticated AI agents without coding.</p>
-                    <div class="trend-meta">
-                        <span class="trend-growth">+380%</span>
-                        <span class="trend-label">Creators</span>
-                    </div>
+                    <div class="trend-meta"><span class="trend-growth">+380%</span><span class="trend-label">Creators</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Predictions Section -->
-    <section id="predictions" class="predictions">
+    <!-- Predictions Section - Lazy Loaded -->
+    <section id="predictions" class="predictions lazy-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Predictions</span>
@@ -173,56 +208,40 @@
             <div class="predictions-timeline">
                 <div class="timeline-line"></div>
                 <div class="prediction-item">
-                    <div class="prediction-marker">
-                        <span>2026</span>
-                    </div>
+                    <div class="prediction-marker"><span>2026</span></div>
                     <div class="prediction-content">
                         <div class="prediction-card">
-                            <div class="prediction-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
+                            <div class="prediction-icon"><i class="fas fa-briefcase"></i></div>
                             <h3>Agent-First Workforce</h3>
                             <p>Every knowledge worker will have 3-5 AI agents as team members, handling research, analysis, and routine decision-making.</p>
                         </div>
                     </div>
                 </div>
                 <div class="prediction-item">
-                    <div class="prediction-marker">
-                        <span>2027</span>
-                    </div>
+                    <div class="prediction-marker"><span>2027</span></div>
                     <div class="prediction-content">
                         <div class="prediction-card">
-                            <div class="prediction-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
+                            <div class="prediction-icon"><i class="fas fa-code"></i></div>
                             <h3>Self-Improving Agents</h3>
                             <p>AI agents will autonomously improve their own code and capabilities through continuous learning and self-optimization.</p>
                         </div>
                     </div>
                 </div>
                 <div class="prediction-item">
-                    <div class="prediction-marker">
-                        <span>2028</span>
-                    </div>
+                    <div class="prediction-marker"><span>2028</span></div>
                     <div class="prediction-content">
                         <div class="prediction-card">
-                            <div class="prediction-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
+                            <div class="prediction-icon"><i class="fas fa-globe"></i></div>
                             <h3>Agent Economy</h3>
                             <p>A global marketplace where AI agents transact with each other, offering services and completing tasks autonomously.</p>
                         </div>
                     </div>
                 </div>
                 <div class="prediction-item">
-                    <div class="prediction-marker">
-                        <span>2030</span>
-                    </div>
+                    <div class="prediction-marker"><span>2030</span></div>
                     <div class="prediction-content">
                         <div class="prediction-card">
-                            <div class="prediction-icon">
-                                <i class="fas fa-infinity"></i>
-                            </div>
+                            <div class="prediction-icon"><i class="fas fa-infinity"></i></div>
                             <h3>Artificial General Agents</h3>
                             <p>First generation of AGI-capable agents that can learn any intellectual task that a human being can perform.</p>
                         </div>
@@ -232,8 +251,8 @@
         </div>
     </section>
 
-    <!-- Use Cases Section -->
-    <section id="usecases" class="usecases">
+    <!-- Use Cases Section - Lazy Loaded -->
+    <section id="usecases" class="usecases lazy-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Use Cases</span>
@@ -250,9 +269,7 @@
                 <div class="tab-panel active" id="enterprise">
                     <div class="usecase-grid">
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-headset"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-headset"></i></div>
                             <h3>Intelligent Customer Support</h3>
                             <p>AI agents handle complex customer inquiries, resolve issues autonomously, and escalate only when necessary.</p>
                             <ul class="usecase-features">
@@ -262,9 +279,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-chart-line"></i></div>
                             <h3>Business Intelligence</h3>
                             <p>Autonomous data analysis agents that monitor KPIs, generate insights, and recommend strategic actions.</p>
                             <ul class="usecase-features">
@@ -274,9 +289,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-tasks"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-tasks"></i></div>
                             <h3>Workflow Automation</h3>
                             <p>End-to-end process automation from document processing to approval workflows and cross-system integration.</p>
                             <ul class="usecase-features">
@@ -290,9 +303,7 @@
                 <div class="tab-panel" id="healthcare">
                     <div class="usecase-grid">
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-user-md"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-user-md"></i></div>
                             <h3>Clinical Decision Support</h3>
                             <p>AI agents analyze patient data, suggest diagnoses, and recommend treatment plans based on latest medical research.</p>
                             <ul class="usecase-features">
@@ -302,9 +313,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-heartbeat"></i></div>
                             <h3>Patient Monitoring</h3>
                             <p>Continuous health monitoring agents that track vital signs and alert healthcare providers to anomalies.</p>
                             <ul class="usecase-features">
@@ -314,9 +323,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-flask"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-flask"></i></div>
                             <h3>Drug Discovery</h3>
                             <p>Research agents that accelerate pharmaceutical development by analyzing molecular structures and predicting outcomes.</p>
                             <ul class="usecase-features">
@@ -330,9 +337,7 @@
                 <div class="tab-panel" id="finance">
                     <div class="usecase-grid">
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-shield-alt"></i></div>
                             <h3>Fraud Detection</h3>
                             <p>Real-time transaction monitoring agents that identify suspicious patterns and prevent financial fraud.</p>
                             <ul class="usecase-features">
@@ -342,9 +347,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-robot"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-robot"></i></div>
                             <h3>Algorithmic Trading</h3>
                             <p>Autonomous trading agents that analyze market data, execute strategies, and optimize portfolio performance.</p>
                             <ul class="usecase-features">
@@ -354,9 +357,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-file-invoice-dollar"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-file-invoice-dollar"></i></div>
                             <h3>Credit Assessment</h3>
                             <p>Intelligent underwriting agents that evaluate creditworthiness using comprehensive data analysis.</p>
                             <ul class="usecase-features">
@@ -370,9 +371,7 @@
                 <div class="tab-panel" id="creative">
                     <div class="usecase-grid">
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-paint-brush"></i></div>
                             <h3>Content Creation</h3>
                             <p>Creative agents that generate articles, social media content, and marketing copy tailored to brand voice.</p>
                             <ul class="usecase-features">
@@ -382,9 +381,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-film"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-film"></i></div>
                             <h3>Video Production</h3>
                             <p>AI agents that script, storyboard, and produce video content from simple text descriptions.</p>
                             <ul class="usecase-features">
@@ -394,9 +391,7 @@
                             </ul>
                         </div>
                         <div class="usecase-card">
-                            <div class="usecase-image">
-                                <i class="fas fa-music"></i>
-                            </div>
+                            <div class="usecase-image"><i class="fas fa-music"></i></div>
                             <h3>Music & Audio</h3>
                             <p>Compositional agents that create original music, sound effects, and audio content for any project.</p>
                             <ul class="usecase-features">
@@ -411,8 +406,8 @@
         </div>
     </section>
 
-    <!-- Key Players Section -->
-    <section id="players" class="players">
+    <!-- Key Players Section - Lazy Loaded -->
+    <section id="players" class="players lazy-section">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Key Players</span>
@@ -422,157 +417,100 @@
             <div class="players-grid">
                 <div class="player-card featured">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fas fa-bolt"></i>
-                        </div>
+                        <div class="player-logo"><i class="fas fa-bolt"></i></div>
                         <div class="player-badge">Leader</div>
                     </div>
                     <h3>OpenAI</h3>
                     <p>Pioneering GPT agents and ChatGPT plugins ecosystem, setting the standard for conversational AI agents.</p>
-                    <div class="player-tags">
-                        <span>GPT Agents</span>
-                        <span>ChatGPT</span>
-                        <span>API</span>
-                    </div>
+                    <div class="player-tags"><span>GPT Agents</span><span>ChatGPT</span><span>API</span></div>
                 </div>
                 <div class="player-card featured">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fas fa-cloud"></i>
-                        </div>
+                        <div class="player-logo"><i class="fas fa-cloud"></i></div>
                         <div class="player-badge">Leader</div>
                     </div>
                     <h3>Anthropic</h3>
                     <p>Claude AI with advanced reasoning and safety features, focusing on helpful, harmless, and honest agents.</p>
-                    <div class="player-tags">
-                        <span>Claude</span>
-                        <span>Safety</span>
-                        <span>Research</span>
-                    </div>
+                    <div class="player-tags"><span>Claude</span><span>Safety</span><span>Research</span></div>
                 </div>
                 <div class="player-card">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fab fa-google"></i>
-                        </div>
+                        <div class="player-logo"><i class="fab fa-google"></i></div>
                     </div>
                     <h3>Google DeepMind</h3>
                     <p>Gemini-powered agents with multimodal capabilities and integration with Google's product ecosystem.</p>
-                    <div class="player-tags">
-                        <span>Gemini</span>
-                        <span>Multimodal</span>
-                        <span>Search</span>
-                    </div>
+                    <div class="player-tags"><span>Gemini</span><span>Multimodal</span><span>Search</span></div>
                 </div>
                 <div class="player-card">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fab fa-microsoft"></i>
-                        </div>
+                        <div class="player-logo"><i class="fab fa-microsoft"></i></div>
                     </div>
                     <h3>Microsoft</h3>
                     <p>Copilot agents integrated across Office 365, Azure, and Windows, bringing AI to billions of users.</p>
-                    <div class="player-tags">
-                        <span>Copilot</span>
-                        <span>Enterprise</span>
-                        <span>Azure</span>
-                    </div>
+                    <div class="player-tags"><span>Copilot</span><span>Enterprise</span><span>Azure</span></div>
                 </div>
                 <div class="player-card">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fas fa-robot"></i>
-                        </div>
+                        <div class="player-logo"><i class="fas fa-robot"></i></div>
                     </div>
                     <h3>AutoGPT</h3>
                     <p>Open-source autonomous agent framework enabling developers to build self-directed AI applications.</p>
-                    <div class="player-tags">
-                        <span>Open Source</span>
-                        <span>Autonomous</span>
-                        <span>Community</span>
-                    </div>
+                    <div class="player-tags"><span>Open Source</span><span>Autonomous</span><span>Community</span></div>
                 </div>
                 <div class="player-card">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fas fa-database"></i>
-                        </div>
+                        <div class="player-logo"><i class="fas fa-database"></i></div>
                     </div>
                     <h3>LangChain</h3>
                     <p>Framework for developing applications powered by language models with agent orchestration capabilities.</p>
-                    <div class="player-tags">
-                        <span>Framework</span>
-                        <span>Developers</span>
-                        <span>Tools</span>
-                    </div>
+                    <div class="player-tags"><span>Framework</span><span>Developers</span><span>Tools</span></div>
                 </div>
                 <div class="player-card">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fab fa-meta"></i>
-                        </div>
+                        <div class="player-logo"><i class="fab fa-meta"></i></div>
                     </div>
                     <h3>Meta AI</h3>
                     <p>Llama models and AI research powering agent capabilities across Meta's social platforms.</p>
-                    <div class="player-tags">
-                        <span>Llama</span>
-                        <span>Open Source</span>
-                        <span>Social</span>
-                    </div>
+                    <div class="player-tags"><span>Llama</span><span>Open Source</span><span>Social</span></div>
                 </div>
                 <div class="player-card">
                     <div class="player-header">
-                        <div class="player-logo">
-                            <i class="fas fa-brain"></i>
-                        </div>
+                        <div class="player-logo"><i class="fas fa-brain"></i></div>
                     </div>
                     <h3>Cohere</h3>
                     <p>Enterprise-focused language models and retrieval-augmented generation for business applications.</p>
-                    <div class="player-tags">
-                        <span>Enterprise</span>
-                        <span>RAG</span>
-                        <span>Embed</span>
-                    </div>
+                    <div class="player-tags"><span>Enterprise</span><span>RAG</span><span>Embed</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <!-- CTA Section - Lazy Loaded -->
+    <section class="cta lazy-section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready for the AI Agent Revolution?</h2>
                 <p>Stay ahead of the curve and prepare your organization for the agent-powered future.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary btn-large">
-                        <span>Get Started</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="btn btn-outline btn-large">
-                        <i class="fas fa-book"></i>
-                        <span>Read Documentation</span>
-                    </a>
+                    <a href="#" class="btn btn-primary btn-large"><span>Get Started</span><i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="btn btn-outline btn-large"><i class="fas fa-book"></i><span>Read Documentation</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer - Lazy Loaded -->
+    <footer class="footer lazy-section">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <i class="fas fa-robot"></i>
-                        <span>AI Agent 2026</span>
-                    </a>
+                    <a href="#" class="footer-logo"><i class="fas fa-robot"></i><span>AI Agent 2026</span></a>
                     <p>Your comprehensive guide to the AI agent revolution. Exploring trends, predictions, and the future of intelligent automation.</p>
                     <div class="footer-social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -609,6 +547,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Deferred JavaScript -->
+    <script src="script.min.js" defer></script>
 </body>
 </html>
